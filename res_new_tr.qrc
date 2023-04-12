@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>icons/arrow_right_FILL0_wght400_GRAD0_opsz48.png</file>
+  </qresource>
+</RCC>

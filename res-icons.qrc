@@ -1,0 +1,22 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/add_box_FILL0_wght400_GRAD0_opsz48.png</file>
+    <file>icons/add_box_FILL0_wght400_GRAD0_opsz48.svg</file>
+    <file>icons/arrow_right_FILL0_wght400_GRAD0_opsz48.png</file>
+    <file>icons/arrow_right_FILL0_wght400_GRAD0_opsz48.svg</file>
+    <file>icons/clock_loader_10_FILL0_wght400_GRAD0_opsz48.png</file>
+    <file>icons/clock_loader_10_FILL0_wght400_GRAD0_opsz48.svg</file>
+    <file>icons/delete_forever_FILL0_wght400_GRAD0_opsz48.png</file>
+    <file>icons/delete_forever_FILL0_wght400_GRAD0_opsz48.svg</file>
+    <file>icons/emoji_transportation_FILL0_wght400_GRAD0_opsz48.png</file>
+    <file>icons/emoji_transportation_FILL0_wght400_GRAD0_opsz48.svg</file>
+    <file>icons/heart_minus_FILL0_wght400_GRAD0_opsz48.png</file>
+    <file>icons/heart_minus_FILL0_wght400_GRAD0_opsz48.svg</file>
+    <file>icons/home_FILL0_wght400_GRAD0_opsz48.png</file>
+    <file>icons/home_FILL0_wght400_GRAD0_opsz48.svg</file>
+    <file>icons/library_add_FILL0_wght400_GRAD0_opsz48.png</file>
+    <file>icons/library_add_FILL0_wght400_GRAD0_opsz48.svg</file>
+    <file>icons/settings_accessibility_FILL0_wght400_GRAD0_opsz48.png</file>
+    <file>icons/settings_accessibility_FILL0_wght400_GRAD0_opsz48.svg</file>
+  </qresource>
+</RCC>
