@@ -25,7 +25,8 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(800, 600)
+        MainWindow.resize(1242, 666)
+        MainWindow.setMaximumSize(QSize(1242, 16777215))
         font = QFont()
         font.setFamilies([u"Academy Engraved LET"])
         MainWindow.setFont(font)
@@ -34,6 +35,59 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout_3 = QVBoxLayout(self.centralwidget)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.horizontalLayout_9 = QHBoxLayout()
+        self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
+        self.PortfolioMeneger = QPushButton(self.centralwidget)
+        self.PortfolioMeneger.setObjectName(u"PortfolioMeneger")
+        self.PortfolioMeneger.setMaximumSize(QSize(16777215, 16777215))
+        self.PortfolioMeneger.setStyleSheet(u"QPushButton {\n"
+"color: white;\n"
+"background-color: rgba(255, 255, 255, 30);\n"
+"border: 1px solid rgba(255, 255, 255, 40);\n"
+"border-radius: 7px;\n"
+"width: 230 px;\n"
+"height: 50px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"background-color: rgba(255, 255, 255, 40);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgba(255, 255, 255, 70);\n"
+"}")
+        icon = QIcon()
+        icon.addFile(u":/icons/icons/savings_FILL0_wght400_GRAD0_opsz48.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.PortfolioMeneger.setIcon(icon)
+        self.PortfolioMeneger.setIconSize(QSize(48, 48))
+
+        self.horizontalLayout_9.addWidget(self.PortfolioMeneger)
+
+        self.ButtonConverter = QPushButton(self.centralwidget)
+        self.ButtonConverter.setObjectName(u"ButtonConverter")
+        self.ButtonConverter.setMaximumSize(QSize(16777215, 16777215))
+        self.ButtonConverter.setStyleSheet(u"QPushButton {\n"
+"color: white;\n"
+"background-color: rgba(255, 255, 255, 30);\n"
+"border: 1px solid rgba(255, 255, 255, 40);\n"
+"border-radius: 7px;\n"
+"width: 230 px;\n"
+"height: 50px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"background-color: rgba(255, 255, 255, 40);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgba(255, 255, 255, 70);\n"
+"}")
+        icon1 = QIcon()
+        icon1.addFile(u":/icons/icons/price_change_FILL0_wght400_GRAD0_opsz48.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.ButtonConverter.setIcon(icon1)
+        self.ButtonConverter.setIconSize(QSize(48, 48))
+
+        self.horizontalLayout_9.addWidget(self.ButtonConverter)
+
+
+        self.verticalLayout_3.addLayout(self.horizontalLayout_9)
+
         self.Balance_frame = QFrame(self.centralwidget)
         self.Balance_frame.setObjectName(u"Balance_frame")
         self.Balance_frame.setStyleSheet(u"background-color: rgba(255, 255, 255, 30);\n"
@@ -73,7 +127,7 @@ class Ui_MainWindow(object):
         self.label_3.setFont(font)
         self.label_3.setStyleSheet(u"background-color: none;\n"
 "border: none;")
-        self.label_3.setPixmap(QPixmap(u":/icons/icons/library_add_FILL0_wght400_GRAD0_opsz48.png"))
+        self.label_3.setPixmap(QPixmap(u":/icons/icons/monetization_on_FILL0_wght400_GRAD0_opsz48.svg"))
 
         self.horizontalLayout.addWidget(self.label_3)
 
@@ -106,7 +160,7 @@ class Ui_MainWindow(object):
         self.label_6.setMaximumSize(QSize(60, 16777215))
         self.label_6.setStyleSheet(u"background-color: none;\n"
 "border: none;")
-        self.label_6.setPixmap(QPixmap(u":/icons/icons/heart_minus_FILL0_wght400_GRAD0_opsz48.png"))
+        self.label_6.setPixmap(QPixmap(u":/icons/icons/heart_minus_FILL0_wght400_GRAD0_opsz48.svg"))
 
         self.horizontalLayout_2.addWidget(self.label_6)
 
@@ -158,7 +212,7 @@ class Ui_MainWindow(object):
         self.icon_grossery.setMaximumSize(QSize(55, 16777215))
         self.icon_grossery.setStyleSheet(u"background-color: none;\n"
 "border: none;")
-        self.icon_grossery.setPixmap(QPixmap(u":/icons/icons/home_FILL0_wght400_GRAD0_opsz48.png"))
+        self.icon_grossery.setPixmap(QPixmap(u":/icons/icons/home_FILL0_wght400_GRAD0_opsz48.svg"))
 
         self.horizontalLayout_3.addWidget(self.icon_grossery)
 
@@ -193,7 +247,7 @@ class Ui_MainWindow(object):
         self.icon_auto.setMaximumSize(QSize(55, 16777215))
         self.icon_auto.setStyleSheet(u"background-color: none;\n"
 "border: none;")
-        self.icon_auto.setPixmap(QPixmap(u":/icons/icons/emoji_transportation_FILL0_wght400_GRAD0_opsz48.png"))
+        self.icon_auto.setPixmap(QPixmap(u":/icons/icons/emoji_transportation_FILL0_wght400_GRAD0_opsz48.svg"))
 
         self.horizontalLayout_4.addWidget(self.icon_auto)
 
@@ -227,7 +281,7 @@ class Ui_MainWindow(object):
         self.icon_other.setMaximumSize(QSize(55, 16777215))
         self.icon_other.setStyleSheet(u"background-color: none;\n"
 "border: none;")
-        self.icon_other.setPixmap(QPixmap(u":/icons/icons/settings_accessibility_FILL0_wght400_GRAD0_opsz48.png"))
+        self.icon_other.setPixmap(QPixmap(u":/icons/icons/settings_accessibility_FILL0_wght400_GRAD0_opsz48.svg"))
 
         self.horizontalLayout_5.addWidget(self.icon_other)
 
@@ -264,6 +318,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.Button_NewTransaction = QPushButton(self.centralwidget)
         self.Button_NewTransaction.setObjectName(u"Button_NewTransaction")
+        self.Button_NewTransaction.setMaximumSize(QSize(16777215, 16777215))
         self.Button_NewTransaction.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: rgba(255, 255, 255, 30);\n"
@@ -278,15 +333,16 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "background-color: rgba(255, 255, 255, 70);\n"
 "}")
-        icon = QIcon()
-        icon.addFile(u":/icons/icons/add_box_FILL0_wght400_GRAD0_opsz48.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.Button_NewTransaction.setIcon(icon)
-        self.Button_NewTransaction.setIconSize(QSize(24, 24))
+        icon2 = QIcon()
+        icon2.addFile(u":/icons/icons/add_box_FILL0_wght400_GRAD0_opsz48.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.Button_NewTransaction.setIcon(icon2)
+        self.Button_NewTransaction.setIconSize(QSize(48, 48))
 
         self.horizontalLayout_7.addWidget(self.Button_NewTransaction)
 
         self.Button_EditTransaction = QPushButton(self.centralwidget)
         self.Button_EditTransaction.setObjectName(u"Button_EditTransaction")
+        self.Button_EditTransaction.setMaximumSize(QSize(16777215, 16777215))
         self.Button_EditTransaction.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: rgba(255, 255, 255, 30);\n"
@@ -301,15 +357,16 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "background-color: rgba(255, 255, 255, 70);\n"
 "}")
-        icon1 = QIcon()
-        icon1.addFile(u":/icons/icons/arrow_right_FILL0_wght400_GRAD0_opsz48.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.Button_EditTransaction.setIcon(icon1)
-        self.Button_EditTransaction.setIconSize(QSize(24, 24))
+        icon3 = QIcon()
+        icon3.addFile(u":/icons/icons/arrow_right_FILL0_wght400_GRAD0_opsz48.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.Button_EditTransaction.setIcon(icon3)
+        self.Button_EditTransaction.setIconSize(QSize(48, 48))
 
         self.horizontalLayout_7.addWidget(self.Button_EditTransaction)
 
         self.Button_DelTransaction = QPushButton(self.centralwidget)
         self.Button_DelTransaction.setObjectName(u"Button_DelTransaction")
+        self.Button_DelTransaction.setMaximumSize(QSize(16777215, 16777215))
         self.Button_DelTransaction.setStyleSheet(u"QPushButton {\n"
 "color: white;\n"
 "background-color: rgba(255, 255, 255, 30);\n"
@@ -324,10 +381,10 @@ class Ui_MainWindow(object):
 "QPushButton:pressed {\n"
 "background-color: rgba(255, 255, 255, 70);\n"
 "}")
-        icon2 = QIcon()
-        icon2.addFile(u":/icons/icons/delete_forever_FILL0_wght400_GRAD0_opsz48.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.Button_DelTransaction.setIcon(icon2)
-        self.Button_DelTransaction.setIconSize(QSize(24, 24))
+        icon4 = QIcon()
+        icon4.addFile(u":/icons/icons/delete_forever_FILL0_wght400_GRAD0_opsz48.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.Button_DelTransaction.setIcon(icon4)
+        self.Button_DelTransaction.setIconSize(QSize(48, 48))
 
         self.horizontalLayout_7.addWidget(self.Button_DelTransaction)
 
@@ -368,7 +425,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 800, 24))
+        self.menubar.setGeometry(QRect(0, 0, 1242, 24))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -381,6 +438,8 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Expenses", None))
+        self.PortfolioMeneger.setText(QCoreApplication.translate("MainWindow", u"Portfolio meneger", None))
+        self.ButtonConverter.setText(QCoreApplication.translate("MainWindow", u"Currency converter", None))
         self.la_CurrentBalance.setText(QCoreApplication.translate("MainWindow", u"Current Balance", None))
         self.la_Balance.setText(QCoreApplication.translate("MainWindow", u"$1200", None))
         self.label_3.setText("")
